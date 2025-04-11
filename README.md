@@ -1,3 +1,12 @@
+# note: temporary workaround
+
+```sh
+cargo update -p time@0.3.23 --precise 0.3.35
+
+# run with wgpu backend (see below)
+cargo run --release --features wgpu-backend --bin transcribe tiny_en audio16k.wav en transcription.txt
+```
+
 # Whisper Burn: Rust Implementation of OpenAI's Whisper Transcription Model
 
 **Whisper Burn** is a Rust implementation of OpenAI's Whisper transcription model using the Rust deep learning framework, Burn.
